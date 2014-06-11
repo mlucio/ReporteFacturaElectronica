@@ -54,7 +54,9 @@ namespace ReporteFacturasElectronicas
         {
             if(tbArchivoPDF.Text != "" && File.Exists(tbArchivoPDF.Text))
             {
-                ExtraerTextoDePDF(tbArchivoPDF.Text);    
+                Cursor.Current = Cursors.WaitCursor;
+                ExtraerTextoDePDF(tbArchivoPDF.Text);
+                Cursor.Current = Cursors.Default;
             }
         }
 
@@ -122,6 +124,7 @@ namespace ReporteFacturasElectronicas
             }
             if(tbArchivoGenerar.Text != "" && dataGridView1.RowCount > 0)
             {
+                Cursor.Current = Cursors.WaitCursor;
                 objWriter = new System.IO.StreamWriter(tbArchivoGenerar.Text);
 
                 for (int row = 0; row < dataGridView1.RowCount - 1; row++)
@@ -138,7 +141,20 @@ namespace ReporteFacturasElectronicas
                 }
 
                 objWriter.Close();
+                Cursor.Current = Cursors.Default;
+                MessageBox.Show("Archivo generado.");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AboutBox1 a = new AboutBox1();
+            a.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

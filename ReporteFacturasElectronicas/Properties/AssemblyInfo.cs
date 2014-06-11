@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ReporteFacturasElectronicas")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Reporte Facturas Electronicas")]
+[assembly: AssemblyDescription("Este programa convierte el archivo PDF con el reporte de las facturas CFDI dado por el SAT en su página, en una relación renglón por renglón en formato CSV, para utilizarlo en reportes o una base de datos.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ReporteFacturasElectronicas")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCompany("Marco A. Lucio R.")]
+[assembly: AssemblyProduct("Reporte Facturas Electrónicas")]
+[assembly: AssemblyCopyright("GPL v2")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.0.1")]
+[assembly: AssemblyFileVersion("1.0.0.1")]

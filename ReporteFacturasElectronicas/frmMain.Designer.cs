@@ -48,6 +48,8 @@
             this.tbArchivoGenerar = new System.Windows.Forms.TextBox();
             this.generarArchivo = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -166,7 +168,7 @@
             // 
             // generarArchivo
             // 
-            this.generarArchivo.Location = new System.Drawing.Point(1026, 243);
+            this.generarArchivo.Location = new System.Drawing.Point(1017, 243);
             this.generarArchivo.Name = "generarArchivo";
             this.generarArchivo.Size = new System.Drawing.Size(117, 23);
             this.generarArchivo.TabIndex = 5;
@@ -174,11 +176,33 @@
             this.generarArchivo.UseVisualStyleBackColor = true;
             this.generarArchivo.Click += new System.EventHandler(this.generarArchivo_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1102, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Acerca de...";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(1140, 242);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(48, 23);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Salir";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 293);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.generarArchivo);
             this.Controls.Add(this.tbArchivoGenerar);
             this.Controls.Add(this.dataGridView1);
@@ -215,6 +239,8 @@
         private System.Windows.Forms.TextBox tbArchivoGenerar;
         private System.Windows.Forms.Button generarArchivo;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
