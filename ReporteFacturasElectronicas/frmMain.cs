@@ -65,6 +65,7 @@ namespace ReporteFacturasElectronicas
             PdfReader reader = new PdfReader(pdfFile);
             int numeroDePaginas;
             string text = "";
+            dataGridView1.Rows.Clear();
 
             numeroDePaginas = reader.NumberOfPages;
             for (int i = 0; i < numeroDePaginas; i++)
